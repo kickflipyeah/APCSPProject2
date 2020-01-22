@@ -17,7 +17,7 @@ void animBG(){
        image(backGround[2], 0,0, width, height);    
     }
    else{
-    image(backGround[3], 0,0, width, height);
+    image(backGround[0], 0,0, width, height);
    }
   //for (int i = 0; i < backGround.length; i++){
   
@@ -29,9 +29,8 @@ void setup(){
   size(800, 600);
   gameLive = true;
   backGround[0] = loadImage("./imgs/BG0.jpg");
-  backGround[1] = loadImage("./imgs/BG1.png");
-  backGround[2] = loadImage("./imgs/BG2.png");
-  backGround[3] = loadImage("./imgs/BG3.png");
+  backGround[1] = loadImage("./imgs/BG2.png");
+  backGround[2] = loadImage("./imgs/BG3.png");
 }
 
 void draw(){
