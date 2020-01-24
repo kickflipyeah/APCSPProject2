@@ -12,7 +12,7 @@ boolean jump = false;
 float i = 0;
 float move = 5;
 float startX = 400;
-float startY = 300;
+float startY = 587;
 float updatedX = startX;
 float updatedY = startY;
 float g;
