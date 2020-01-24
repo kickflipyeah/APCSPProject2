@@ -68,10 +68,10 @@ void draw(){
    // }
  
   textAlign(CENTER,CENTER);
- if(count < 80){
-   text("GO!", width/2, height/4);
- }
-  
+
+ if(count<100)
+  text("GO!", width/2, height/2);
+
 }
 
 void showWAS(){
@@ -80,13 +80,14 @@ void showWAS(){
 }
 
 void startScreen(int remainingTimeMs){
-  background(50);
-  textSize(100);
-  fill(0);
+  background(60,100,50);
+  textSize(150);
+  fill(40,40,150);
   textAlign(CENTER,CENTER);
   // Show the remaining time, in seconds;
   // show n when there are n or fewer seconds remaining. 
   text(ceil(remainingTimeMs/1000.0), width/2, height/2);
+ 
 }
 
 void checkKeys(){
