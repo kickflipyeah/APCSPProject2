@@ -68,8 +68,10 @@ void draw(){
    // }
  
   textAlign(CENTER,CENTER);
- 
-  text("GO!", width/2, height/2);
+ if(count < 80){
+   text("GO!", width/2, height/4);
+ }
+  
 }
 
 void showWAS(){
@@ -110,6 +112,10 @@ void checkKeys(){
         println("jump");
         updatedY += g;
         g += 1;
+      }
+      if (g==16){
+        g = -15;
+        jump = false;
       }
     }
     else{
